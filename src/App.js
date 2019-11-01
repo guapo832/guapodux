@@ -13,7 +13,11 @@ function App() {
    
      <GuapoStoreProvider reducer = {rootReducer} initialState={0}>
       
-     <MyTestComponent></MyTestComponent>
+      <GuapoStoreProvider reducer = {rootReducer} initialState = {1}>
+ <MyTestComponent></MyTestComponent>
+
+      </GuapoStoreProvider>
+    
      <MyTestComponent></MyTestComponent>
      <MyTestComponent></MyTestComponent>
      </GuapoStoreProvider>

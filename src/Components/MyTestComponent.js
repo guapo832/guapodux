@@ -9,7 +9,7 @@ export const MyTestComponent = (props) => {
     { props.children }
   <p>This value is a state value passed down to a child component from the Guapo Store: {state}  </p>
    <button onClick={()=>{
-     dispatch({type: 'testing', payload:3});
+     dispatch({type: 'testing', payload:state+1});
    }}>update state</button>
  </div>
 }
